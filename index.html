@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Justine Mwinga | Personal Website</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="site-header">
+        <h1>Welcome to My Personal Website</h1>
+        <p>ICT251 Web Technologies | Computer Science</p>
+    </header>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+        <a href="#about">About Me</a>
+        <a href="#hobbies">Hobbies</a>
+        <a href="#learning">Learning Plan</a>
+        <a href="#photos">Photos</a>
+        <a href="#media">Media</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <main>
+
+        <!-- ABOUT ME -->
+        <section id="about" class="content-section">
+            <h2>About Me</h2>
+
+            <h3>Name: Justine Mwinga</h3>
+            <h3>Student Number: 202500171</h3>
+
+            <p>
+                Hello! My name is Justine Mwinga, and I am a Computer
+                Science student studying Web Technologies at Mulungushi
+                University. I am interested in programming, artificial
+                intelligence, and modern technology. I enjoy exploring
+                how computers work and developing practical technical
+                skills.
+            </p>
+
+            <p>
+                Through ICT251 Web Technologies, I want to develop
+                a strong understanding of HTML, CSS, and JavaScript.
+                My goal is to learn how to design and develop
+                interactive, responsive, and user-friendly websites.
+                I believe continuous learning and practical projects
+                are important for becoming a better software developer.
+            </p>
+        </section>
+
+        <!-- HOBBIES -->
+        <section id="hobbies" class="content-section">
+            <h2>My Hobbies</h2>
+
+            <ul>
+                <li>Coding and AI tinkering</li>
+                <li>Reading and Continuous Learning</li>
+                <li>Digital Strategy and Gaming</li>
+            </ul>
+        </section>
+
+        <!-- LEARNING PLAN -->
+        <section id="learning" class="content-section">
+            <h2>My Learning Plan</h2>
+
+            <p>
+                My learning plan focuses on developing practical
+                web development skills through consistent practice.
+            </p>
+
+            <ol>
+                <li>Learn HTML elements, attributes, and semantic structure.</li>
+                <li>Study CSS layouts, colors, typography, and responsive design.</li>
+                <li>Learn JavaScript fundamentals and DOM manipulation.</li>
+                <li>Build small projects to apply my knowledge.</li>
+            </ol>
+
+            <h3>Weekly Web Development Schedule</h3>
+
+            <table>
+                <caption>My Weekly Web Learning Plan</caption>
+
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>Topic</th>
+                        <th>Practice Task</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Monday</td>
+                        <td>HTML</td>
+                        <td>Create a structured webpage.</td>
+                    </tr>
+
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>CSS</td>
+                        <td>Style a webpage using selectors.</td>
+                    </tr>
+
+                    <tr>
+                        <td>Friday</td>
+                        <td>JavaScript</td>
+                        <td>Practice basic interactive features.</td>
+                    </tr>
+
+                    <tr>
+                        <td>Saturday</td>
+                        <td>Revision</td>
+                        <td>Build and improve a mini project.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p>
+                For additional learning resources, visit
+                <a href="https://developer.mozilla.org/en-US/docs/Web"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    MDN Web Docs - Web Development
+                </a>.
+            </p>
+        </section>
+
+        <!-- PHOTO GALLERY -->
+        <section id="photos" class="content-section">
+            <h2>My Photos</h2>
+
+            <p>
+                A collection of photographs representing my
+                interests, learning journey, and student life.
+            </p>
+
+            <div class="gallery">
+
+                <figure>
+                    <img src="images/photo1.png"
+                         alt="A photograph representing my interest in coding">
+
+                    <figcaption>
+                        Exploring programming and technology.
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/photo2.jpg"
+                         alt="A photograph representing learning and education">
+
+                    <figcaption>
+                        Learning and continuous improvement.
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/photo3.jpg"
+                         alt="A photograph representing my university experience">
+
+                    <figcaption>
+                        My journey as a Computer Science student.
+                    </figcaption>
+                </figure>
+
+            </div>
+        </section>
+
+        <!-- MEDIA -->
+        <section id="media" class="content-section">
+            <h2>My Media</h2>
+
+            <h3>Self-Introduction Video</h3>
+
+            <p>
+                In this video, I introduce myself, my academic
+                programme, and one web development skill I hope
+                to learn.
+            </p>
+
+            <video controls>
+                <source src="videos/introduction.mp4" type="video/mp4">
+                Your browser does not support the video element.
+            </video>
+
+            <p>
+                Video summary: My name is Justine Mwinga. I am a
+                Computer Science student studying Web Technologies.
+                I hope to improve my HTML and CSS skills and learn
+                how to build responsive websites.
+            </p>
+
+            <h3>My Audio Recording</h3>
+
+            <p>
+                This recording describes my interest in coding
+                and continuous learning.
+            </p>
+
+            <audio controls>
+                <source src="videos/voice.opus" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="content-section">
+            <h2>Contact Me</h2>
+
+            <p>
+                You can use the form below to leave a message.
+                This is a demonstration form and does not send
+                or store information.
+            </p>
+
+            <form action="#" method="post">
+
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+
+                    <input type="text"
+                           id="name"
+                           name="name"
+                           placeholder="Enter your full name"
+                           required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+
+                    <input type="email"
+                           id="email"
+                           name="email"
+                           placeholder="Enter your email"
+                           required>
+                </div>
+
+                <div class="form-group">
+                    <label for="topic">Topic:</label>
+
+                    <select id="topic" name="topic">
+                        <option value="">Select a topic</option>
+                        <option value="web-development">Web Development</option>
+                        <option value="programming">Programming</option>
+                        <option value="general">General Inquiry</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Your Message:</label>
+
+                    <textarea id="message"
+                              name="message"
+                              rows="5"
+                              placeholder="Write your message here..."
+                              required></textarea>
+                </div>
+
+                <button type="submit">Send Message</button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <p>&copy; 2026 Justine Mwinga</p>
+        <p>ICT251 Web Technologies | Mulungushi University</p>
+    </footer>
+
+</body>
+
+</html>
