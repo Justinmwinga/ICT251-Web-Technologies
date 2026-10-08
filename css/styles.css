@@ -451,3 +451,320 @@ body.dark-theme a {
         flex-wrap: wrap;
     }
 }
+
+/* EDITORIAL VISUAL REFINEMENT */
+:root {
+    --page: #f3f6f3;
+    --surface: #ffffff;
+    --ink: #1b302d;
+    --muted: #5d716b;
+    --forest: #173d35;
+    --forest-deep: #102d28;
+    --accent: #ae4d35;
+    --accent-hover: #873a29;
+    --line: #d6e0db;
+    --soft: #e8efeb;
+}
+
+body {
+    color: var(--ink);
+    background-color: var(--page);
+    font-family: 'Trebuchet MS', 'Segoe UI', sans-serif;
+}
+
+.site-header {
+    padding: 68px max(5vw, calc((100% - 1100px) / 2));
+    background-color: var(--forest);
+    text-align: left;
+}
+
+.site-header h1 {
+    max-width: 760px;
+    margin: 0 0 14px;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 1.12;
+}
+
+.site-header p {
+    color: #c5d9d0;
+    font-size: 1.05rem;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    justify-content: flex-start;
+    gap: 4px 18px;
+    padding: 10px max(5vw, calc((100% - 1100px) / 2));
+    background-color: var(--forest-deep);
+}
+
+.navbar a {
+    padding: 9px 2px;
+    border-bottom: 2px solid transparent;
+    border-radius: 0;
+    color: #e5eee9;
+    white-space: nowrap;
+    transition: border-color 180ms ease, color 180ms ease;
+}
+
+.navbar a:hover,
+.navbar a:focus-visible {
+    border-bottom-color: #d98b6d;
+    background: transparent;
+    color: #ffffff;
+    outline: none;
+}
+
+.navbar a:focus-visible,
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid #d98b6d;
+    outline-offset: 3px;
+}
+
+main {
+    width: min(90%, 1100px);
+    margin: 34px auto 56px;
+}
+
+.content-section {
+    margin: 0;
+    padding: 34px 0 42px;
+    border: 0;
+    border-bottom: 1px solid var(--line);
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+}
+
+.content-section h2 {
+    position: relative;
+    margin-bottom: 22px;
+    padding-bottom: 13px;
+    border-bottom: 1px solid var(--line);
+    color: var(--forest);
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.content-section h2::after {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 58px;
+    height: 2px;
+    background: var(--accent);
+    content: '';
+}
+
+.content-section h3,
+caption {
+    color: var(--forest);
+}
+
+a {
+    color: #246b59;
+    text-underline-offset: 3px;
+}
+
+a:hover {
+    color: var(--accent-hover);
+}
+
+th {
+    background-color: var(--forest);
+}
+
+th,
+td {
+    border-color: var(--line);
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--page);
+}
+
+button {
+    border-radius: 4px;
+    background-color: var(--accent);
+    padding: 11px 18px;
+    font-weight: 600;
+    transition: background-color 180ms ease, transform 180ms ease;
+}
+
+button:hover {
+    background-color: var(--accent-hover);
+    transform: translateY(-1px);
+}
+
+.nav-action,
+.nav-action:hover,
+.nav-action:focus {
+    background-color: var(--accent);
+}
+
+.project-grid {
+    gap: 16px;
+}
+
+.project-card {
+    border: 1px solid var(--line);
+    border-top: 2px solid var(--forest);
+    border-radius: 4px;
+    background-color: var(--surface);
+    transition: border-color 180ms ease, transform 180ms ease;
+}
+
+.project-card:hover {
+    transform: translateY(-2px);
+    border-color: #a9c0b5;
+}
+
+.project-details {
+    border-left-color: var(--accent);
+    background-color: var(--soft);
+}
+
+.featured-photo img {
+    border-radius: 4px;
+    background-color: var(--surface);
+    box-shadow: 0 12px 28px rgba(20, 45, 39, 0.12);
+}
+
+.featured-photo figcaption {
+    color: var(--muted);
+    font-weight: 500;
+}
+
+.gallery-thumbnails img {
+    border: 1px solid var(--line);
+    border-radius: 3px;
+}
+
+input,
+select,
+textarea {
+    border-color: #b9c9c1;
+    border-radius: 4px;
+    background-color: var(--surface);
+}
+
+.site-footer {
+    margin-top: 0;
+    background-color: var(--forest-deep);
+}
+
+.site-footer a {
+    color: #c5d9d0;
+}
+
+body.dark-theme {
+    --page: #111c1a;
+    --surface: #1b2b27;
+    --ink: #e5eee9;
+    --muted: #b4c7be;
+    --forest: #c5d9d0;
+    --forest-deep: #0c1715;
+    --accent: #e08a69;
+    --accent-hover: #c86b4b;
+    --line: #384a44;
+    --soft: #253832;
+    color: var(--ink);
+    background-color: var(--page);
+}
+
+body.dark-theme .content-section {
+    border-bottom-color: var(--line);
+    background: transparent;
+}
+
+body.dark-theme .content-section h2,
+body.dark-theme .content-section h3,
+body.dark-theme caption {
+    color: var(--forest);
+}
+
+body.dark-theme .project-card,
+body.dark-theme .project-details,
+body.dark-theme table {
+    border-color: var(--line);
+    background-color: var(--surface);
+}
+
+body.dark-theme .project-details {
+    border-left-color: var(--accent);
+    background-color: var(--soft);
+}
+
+body.dark-theme tbody tr:nth-child(even) {
+    background-color: #22332e;
+}
+
+body.dark-theme input,
+body.dark-theme select,
+body.dark-theme textarea {
+    border-color: #52675e;
+    background-color: #14221e;
+    color: var(--ink);
+}
+
+body.dark-theme a {
+    color: #8fd0b3;
+}
+
+body.dark-theme .site-footer a {
+    color: #c5d9d0;
+}
+
+@media (max-width: 600px) {
+    .site-header {
+        padding: 46px 6%;
+    }
+
+    .site-header h1 {
+        font-size: 2.2rem;
+    }
+
+    .navbar {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        overflow-x: auto;
+        padding: 9px 5%;
+        text-align: left;
+    }
+
+    .navbar a {
+        align-self: center;
+    }
+
+    main {
+        width: 88%;
+        margin: 20px auto 38px;
+    }
+
+    .content-section {
+        padding: 28px 0 34px;
+    }
+
+    .content-section h2 {
+        font-size: 1.6rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+    }
+}
