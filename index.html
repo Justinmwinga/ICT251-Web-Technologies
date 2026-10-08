@@ -8,6 +8,7 @@
     <title>Justine Mwinga | Personal Website</title>
 
     <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
 </head>
 
 <body>
@@ -19,12 +20,14 @@
     </header>
 
     <!-- NAVIGATION -->
-    <nav class="navbar">
+    <nav class="navbar" aria-label="Main navigation">
+        <button type="button" id="theme-toggle" class="nav-action">Dark Mode</button>
         <a href="#about">About Me</a>
         <a href="#hobbies">Hobbies</a>
         <a href="#learning">Learning Plan</a>
         <a href="#photos">Photos</a>
         <a href="#media">Media</a>
+        <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
     </nav>
 
@@ -143,35 +146,20 @@
                 interests, learning journey, and student life.
             </p>
 
-            <div class="gallery">
-
-                <figure>
-                    <img src="images/photo1.png"
+            <div class="gallery-viewer">
+                <button type="button" id="previous-photo">Previous</button>
+                <figure class="featured-photo">
+                    <img id="gallery-image" src="images/photo1.png"
                          alt="A photograph representing my interest in coding">
-
-                    <figcaption>
-                        Exploring programming and technology.
-                    </figcaption>
+                    <figcaption id="gallery-caption">Exploring programming and technology.</figcaption>
                 </figure>
+                <button type="button" id="next-photo">Next</button>
+            </div>
 
-                <figure>
-                    <img src="images/photo2.jpg"
-                         alt="A photograph representing learning and education">
-
-                    <figcaption>
-                        Learning and continuous improvement.
-                    </figcaption>
-                </figure>
-
-                <figure>
-                    <img src="images/photo3.jpg"
-                         alt="A photograph representing my university experience">
-
-                    <figcaption>
-                        My journey as a Computer Science student.
-                    </figcaption>
-                </figure>
-
+            <div class="gallery-thumbnails" aria-label="Photo gallery">
+                <img src="images/photo1.png" alt="Coding and technology thumbnail">
+                <img src="images/photo2.jpg" alt="Learning and education thumbnail">
+                <img src="images/photo3.jpg" alt="University experience thumbnail">
             </div>
         </section>
 
@@ -207,10 +195,45 @@
             </p>
 
             <audio controls>
-                <source src="videos/voice.opus" type="audio/mpeg">
+                <source src="videos/voice.opus" type="audio/ogg; codecs=opus">
                 Your browser does not support the audio element.
             </audio>
 
+        </section>
+
+        <!-- PROJECTS / SKILLS -->
+        <section id="projects" class="content-section">
+            <h2>Projects &amp; Skills</h2>
+            <p>These are some of the practical skills and project areas I have developed while studying Computer Science and Web Technologies.</p>
+
+            <div class="project-grid">
+                <article class="project-card">
+                    <h3>Web Development</h3>
+                    <p>HTML5, CSS3, responsive layouts, semantic structure and basic JavaScript.</p>
+                    <button type="button" class="details-toggle" aria-expanded="false">Show Details</button>
+                    <div class="project-details" hidden>
+                        <p>I can structure pages with semantic HTML, style them with external CSS and add interactive behaviour with JavaScript and DOM events.</p>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <h3>Java Programming</h3>
+                    <p>Object-oriented programming, classes, methods, encapsulation and practical application development.</p>
+                    <button type="button" class="details-toggle" aria-expanded="false">Show Details</button>
+                    <div class="project-details" hidden>
+                        <p>I am developing Java applications using OOP principles and modern project structures.</p>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <h3>Cybersecurity</h3>
+                    <p>Networking fundamentals, Linux, reconnaissance and ethical security testing in controlled labs.</p>
+                    <button type="button" class="details-toggle" aria-expanded="false">Show Details</button>
+                    <div class="project-details" hidden>
+                        <p>My cybersecurity learning includes practical lab work, network discovery and vulnerability investigation in authorized environments.</p>
+                    </div>
+                </article>
+            </div>
         </section>
 
         <!-- CONTACT -->
@@ -267,6 +290,7 @@
                 </div>
 
                 <button type="submit">Send Message</button>
+                <p id="form-feedback" class="form-feedback" aria-live="polite"></p>
 
             </form>
         </section>
@@ -277,6 +301,7 @@
     <footer class="site-footer">
         <p>&copy; 2026 Justine Mwinga</p>
         <p>ICT251 Web Technologies | Mulungushi University</p>
+        <p><a href="https://github.com/infintyknowledge0/myweb-" target="_blank" rel="noopener noreferrer">View Source on GitHub</a></p>
     </footer>
 
 </body>

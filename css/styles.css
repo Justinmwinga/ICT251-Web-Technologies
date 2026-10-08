@@ -294,3 +294,160 @@ button:focus {
         padding: 8px;
     }
 }
+
+/* ACTIVITY 3 INTERACTIVE FEATURES */
+.nav-action {
+    background-color: #2f80ed;
+    padding: 10px 15px;
+}
+
+.nav-action:hover,
+.nav-action:focus {
+    background-color: #0b3c70;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    padding: 20px;
+    border: 1px solid #bcccdc;
+    border-radius: 8px;
+    background-color: #f8fafc;
+}
+
+.project-card h3 {
+    margin-top: 0;
+}
+
+.project-details {
+    margin-top: 15px;
+    padding: 12px;
+    border-left: 4px solid #2f80ed;
+    background-color: #eaf2fb;
+}
+
+.gallery-viewer {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 15px;
+}
+
+.featured-photo {
+    margin: 0;
+    text-align: center;
+}
+
+.featured-photo img {
+    width: 100%;
+    max-width: 700px;
+    max-height: 500px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.featured-photo figcaption {
+    padding: 12px;
+    font-weight: bold;
+}
+
+.gallery-thumbnails {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+    justify-content: center;
+}
+
+.gallery-thumbnails img {
+    width: 80px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.form-feedback {
+    padding: 12px;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.form-feedback:empty {
+    display: none;
+}
+
+.form-feedback.error {
+    background-color: #fdecec;
+    color: #8a1c1c;
+    border: 1px solid #e0a0a0;
+}
+
+.form-feedback.success {
+    background-color: #eaf7ed;
+    color: #185c2b;
+    border: 1px solid #9ac9a5;
+}
+
+/* Activity 3 dark theme */
+body.dark-theme {
+    color: #e6edf3;
+    background-color: #111827;
+}
+
+body.dark-theme .content-section {
+    background-color: #1f2937;
+    border-color: #374151;
+}
+
+body.dark-theme .content-section h2,
+body.dark-theme .content-section h3,
+body.dark-theme caption {
+    color: #dbeafe;
+}
+
+body.dark-theme .project-card {
+    background-color: #273449;
+    border-color: #4b5563;
+}
+
+body.dark-theme .project-details {
+    background-color: #1e3a5f;
+}
+
+body.dark-theme table {
+    background-color: #1f2937;
+}
+
+body.dark-theme tbody tr:nth-child(even) {
+    background-color: #273449;
+}
+
+body.dark-theme input,
+body.dark-theme select,
+body.dark-theme textarea {
+    background-color: #111827;
+    color: #f9fafb;
+    border-color: #6b7280;
+}
+
+body.dark-theme .site-footer a,
+body.dark-theme a {
+    color: #7dd3fc;
+}
+
+@media (max-width: 600px) {
+    .gallery-viewer {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-viewer button {
+        width: 100%;
+    }
+
+    .gallery-thumbnails {
+        flex-wrap: wrap;
+    }
+}
